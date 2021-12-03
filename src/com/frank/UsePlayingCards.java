@@ -3,9 +3,10 @@ package com.frank;
 import java.util.ArrayList;
 
 public class UsePlayingCards {
-// This is our application program which will instantiate object and use thier methods to manipulate them
+// This is our application program which will instantiate object and use their methods to manipulate them
 // We know this is the application program because it has the main() method
 	public static void main(String[] args) {
+		System.out.println("\n--------- American Playing Cards ---------------------------");
 
 		AmericanPlayingCard aUSACard = new AmericanPlayingCard(1, "HEARTS");
 		System.out.println("aUSACard is :");
@@ -23,6 +24,8 @@ public class UsePlayingCards {
 		System.out.println("aUSACard4 is :");
 		aUSACard4.showCard();
 
+		System.out.println("\n--------- Italian Playing Cards ---------------------------");
+
 		ItalianPlayingCard anItalianCard1 = new ItalianPlayingCard(13, "SWORDS");
 		System.out.println("anItalianCard1 is :");
 		anItalianCard1.showCard();  // Runs the ItalianPlayingCard showCard()
@@ -34,6 +37,8 @@ public class UsePlayingCards {
 		ItalianPlayingCard anItalianCard3 = new ItalianPlayingCard(11, "Daniel");
 		System.out.println("anItalianCard3 is :");
 		anItalianCard3.showCard();
+
+		System.out.println("\n--------- Swiss Playing Cards ---------------------------");
 
 		SwissPlayingCard aSwissCard1 = new SwissPlayingCard(13, "ROSES");
 		System.out.println("aSwissCard1 is :");
@@ -55,21 +60,21 @@ public class UsePlayingCards {
 
 		PlayingCard aCard; // Define an object of the super class
 
-		aCard = aUSACard;  // Assign a sub class object to the super class object
+		aCard = aUSACard;  // Assign a subclass object to the super class object
 		aCard.showCard();  // Use the super class to invoke a method - run the showCard() method of the object IN aCard
 
-		aCard = anItalianCard1;  // Assign a sub class object to the super class object
+		aCard = anItalianCard1;  // Assign a subclass object to the super class object
 		aCard.showCard();        // Use the super class to invoke a method - run the showCard() method of the object IN aCard
 
-		aCard = aSwissCard1;  // Assign a sub class object to the super class object
+		aCard = aSwissCard1;  // Assign a subclass object to the super class object
 		aCard.showCard();     // Use the super class to invoke a method - run the showCard() method of the object IN aCard
 
 ArrayList<PlayingCard> myCards = new ArrayList();  // Defined an ArrayList of super class objects
 
-		myCards.add(anItalianCard1);  // add sub class object to my ArrayList of super class objects
-		myCards.add(aUSACard);        // add sub class object to my ArrayList of super class objects
-		myCards.add(aSwissCard1);     // add sub class object to my ArrayList of super class objects
-		myCards.add(aUSACard2);       // add sub class object to my ArrayList of super class objects
+		myCards.add(anItalianCard1);  // add subclass object to my ArrayList of super class objects
+		myCards.add(aUSACard);        // add subclass object to my ArrayList of super class objects
+		myCards.add(aSwissCard1);     // add subclass object to my ArrayList of super class objects
+		myCards.add(aUSACard2);       // add subclass object to my ArrayList of super class objects
 
 		System.out.println("\n ---- Here come the elements from ArrayList ------\n");
 

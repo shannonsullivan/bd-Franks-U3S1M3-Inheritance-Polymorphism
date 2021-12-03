@@ -27,9 +27,10 @@ public class AmericanPlayingCard extends PlayingCard{
 	static {  // Note: no function/method definitions - anonymous function
 		initializeMaps();  // call the function to initialize the suitMap and valueMap
 	}
-	
-	public AmericanPlayingCard() 
-	{
+
+	// subclass constructor, must call the superclass constructor before it does anything else
+	public AmericanPlayingCard() {
+
 		super(DEFAULTCARDVALUE, DEFAULTSUIT, DEFAULTCOLOR);
 	} 
 
